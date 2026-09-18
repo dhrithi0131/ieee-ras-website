@@ -1,0 +1,109 @@
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: #030509;
+  padding: 70px 0 25px;
+}
+
+.footer-container {
+  width: min(1240px, 92%);
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 50px;
+}
+
+.footer-logo {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.footer-brand p {
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+.footer-brand span {
+  display: block;
+  margin-top: 25px;
+
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+
+  color: var(--cyan);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.footer-links a {
+  color: var(--muted);
+  transition: 0.25s;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-socials a {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+
+  color: var(--muted);
+
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  color: var(--cyan);
+  border-color: var(--cyan);
+  transform: translateY(-3px);
+}
+
+.footer-bottom {
+  width: min(1240px, 92%);
+  margin: 60px auto 0;
+
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+  display: flex;
+  justify-content: space-between;
+
+  color: #667083;
+  font-size: 0.78rem;
+}
+
+.footer-bottom a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+@media (max-width: 700px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
