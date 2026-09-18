@@ -1,5 +1,7 @@
 import { useRef } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+
 import {
   ArrowDownRight,
   ArrowUpRight,
@@ -35,6 +37,7 @@ const domains = [
 
 function Home() {
   const visualRef = useRef(null);
+
   const pointerRef = useRef({
     x: 0,
     y: 0,
@@ -191,13 +194,13 @@ function Home() {
             </p>
 
             <div className="hero-buttons">
-              <a
-                href="/domains"
+              <Link
+                to="/domains"
                 className="hero-primary"
               >
                 Explore RAS
                 <ArrowUpRight size={18} />
-              </a>
+              </Link>
 
               <a
                 href="https://www.instagram.com/ieeerasvitc/"
@@ -331,13 +334,13 @@ function Home() {
                 experimentation and creating real systems.
               </p>
 
-              <a
-                href="/about"
+              <Link
+                to="/about"
                 className="text-link"
               >
                 Discover the chapter
                 <ArrowUpRight size={17} />
-              </a>
+              </Link>
             </div>
 
           </div>
@@ -365,13 +368,13 @@ function Home() {
               </h2>
             </div>
 
-            <a
-              href="/domains"
+            <Link
+              to="/domains"
               className="heading-link"
             >
               View all domains
               <ArrowUpRight size={17} />
-            </a>
+            </Link>
 
           </div>
 
@@ -403,6 +406,7 @@ function Home() {
                 >
                   <div className="domain-card-top">
                     <span>{domain.number}</span>
+
                     <Icon
                       size={22}
                       strokeWidth={1.5}
@@ -458,13 +462,14 @@ function Home() {
                 technical work behind IEEE RAS VIT Chennai.
               </p>
 
-              <a
-                href="/join"
+              {/* THIS BUTTON NOW USES REACT ROUTER */}
+              <Link
+                to="/join"
                 className="statement-button"
               >
                 Get involved
                 <ArrowUpRight size={18} />
-              </a>
+              </Link>
 
             </div>
           </div>
