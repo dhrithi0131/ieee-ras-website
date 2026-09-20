@@ -4,6 +4,7 @@ import { AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import PageTransition from "./components/PageTransition";
+import CursorWhisper from "./components/CursorWhisper";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -16,6 +17,8 @@ function App() {
 
   return (
     <>
+      <CursorWhisper />
+
       <Navbar />
 
       <AnimatePresence mode="wait">
