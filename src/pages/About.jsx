@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import {
   ArrowUpRight,
   Bot,
@@ -331,13 +332,13 @@ function About() {
                 technical chapters and student communities.
               </p>
 
-              <a
-                href="/join"
+              <Link
+                to="/join"
                 className="vortex-button"
               >
                 Get involved
                 <ArrowUpRight size={17} />
-              </a>
+              </Link>
 
             </div>
 
